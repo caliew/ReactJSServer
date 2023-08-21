@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr/>
+    <div id="greeting-div"></div>
+    <hr/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script type="text/babel">
+        var Greeting = React.createClass({
+            render: function() {
+                return (
+                    <div>
+                        <h2>BASIC REACT WITH BABEL TRANSPILER</h2>
+                        <h3>CDNJS LOADED REACT.MIN.JS</h3>
+                        <h3>CDNJS LOADED REACT-DOM.MIN.JS</h3>
+                        <h3>CDNJS LOADED BROWSER.MIN.JS</h3>
+                    </div>
+                )
+            }
+        });
+        ReactDOM.render(<Greeting/>,document.getElementById('greeting-div'))
+    </script>
+</body>
+</html>
